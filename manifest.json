@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "version": "1.0.0",
+  "name": "myAdSafe",
+  "description": "护理助手插件",
+  "browser_action": {},
+  "permissions": [
+    "*://www.hulizhushou.com/"
+  ],
+  "background": {},
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.hulizhushou.com/"
+      ],
+      "js": [
+        "md5.js",
+        "jquery-3.3.1.js",
+        "index.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ]
+}
